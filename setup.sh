@@ -17,6 +17,10 @@ git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 
+#input method
+sudo apt install -y ibus-rime
+sudo apt install -y librime-data-double-pinyin
+
 #config docker
 sudo apt-get update
 
@@ -40,3 +44,4 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
+
